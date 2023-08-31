@@ -1,0 +1,226 @@
+/* Resetear estilos por defecto */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  body {
+    zoom: 80%;
+    -moz-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    transform-origin: 0 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url("fondo.jfif");
+    background-size: 100% auto; /* Establece el tamaño del fondo al 50% del ancho del contenedor y altura automática */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establece el alto mínimo del viewport */
+  }
+  
+    @import url("https://fonts.googleapis.com/css?family=Varela+Round");
+    html {
+    box-sizing: border-box;
+    }
+    *, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1.1px;
+    }
+    body, html {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    font-family: "Varela Round", sans-serif;
+    }
+
+    .menu li {
+      width: 210px;
+      height: 50px;
+      transition: background-position-x 0.9s linear;
+      text-align: center;
+      }
+      .menu li a {
+      font-size: 22px;
+      color: #ffffff;
+      text-decoration: none;
+      transition: all 0.45s;
+      }
+    .menu li:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+    animation: line 1s;
+    }
+    .menu li:hover a {
+    color: #d94f5c;
+    }
+    .menu li:not(:last-child) {
+    margin-right: 30px;
+    }
+    @keyframes line {
+    0% {
+        background-position-x: 390px;
+    }
+    }
+   /*Color turquesa solicitado por dueño del producto en header del sitio de inicio*/
+
+    header {
+      background-color: #1abc9c; 
+      padding: 20px;
+      color: #fff;
+    }
+
+    /*Configuraciones generales del header o encabezado*/
+    header h1 {
+      margin: 0;
+    }
+
+    header nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+      position: relative;
+    }
+
+    header nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    /* Color negro al pasar el mouse sobre pestañas para navegar a otros menús (Diseño interactivo) */
+    header nav ul li:hover a {
+      color: #000000; 
+    }
+
+
+
+    header nav ul li::before {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #1abc9c; /* Color turquesa */
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    header nav ul li:hover::before {
+      transform: scaleX(1);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    /* Color turquesa solicitado por product owner usado en pie de página */
+    footer {
+      background-color: #1abc9c; /* Color turquesa */
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Estilos para el footer */
+    footer {
+      margin-top: auto; /* Empuja el footer hacia abajo */
+    }
+
+    /* Estilos para el formulario de contacto */
+    .formulario-contacto {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para los campos de entrada */
+    .formulario-contacto label,
+    .formulario-contacto input,
+    .formulario-contacto textarea {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .formulario-contacto label {
+      font-weight: bold;
+    }
+
+    .formulario-contacto input,
+    .formulario-contacto textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    /* Estilos para el botón de enviar */
+    .boton-enviar {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .boton-enviar input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* Estilos para el formulario de WhatsApp */
+    .contacto-whatsapp {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .whatsapp-link {
+      display: inline-block;
+    }
+
+    .whatsapp-img {
+      width: 450px;
+      height: auto;
+    }
+  
+    footer {
+      background-color: #1abc9c;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    /* Estilos para el footer */
+    footer {
+      margin-top: auto; /* Empuja el footer hacia abajo */
+    }

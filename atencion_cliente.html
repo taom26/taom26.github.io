@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bp&TEC - Inicio</title>
+  <link rel="stylesheet" href="css/stylesatencioncliente.css">
+  <script src="https://kit.fontawesome.com/d59ee4c5e6.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>  
+</head>
+<body>
+  <header>
+    <h1>Papelería bp&TEC</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="buscar.html">Buscar</a></li>
+        <li><a href="costura.html">Costura</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="atencion_cliente.html">Atención al Cliente</a></li>
+      </ul>
+    </nav>
+  </header>
+  </header>
+    <h1 class="fw-300 centrar-texto">Atención al cliente</h1>
+
+    <main class="contenedor seccion contenido-centrado">
+        <div class="formulario-whatsapp">
+            <div class="formulario-contacto">
+                <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
+                <form class="contacto" action="https://formsubmit.co/bptecgaming@gmail.com" method="POST">
+                    <fieldset class="informacion-personal">
+                        <legend>Información Personal</legend>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
+
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="email" name="email"  placeholder="Tu Correo electrónico" required>
+
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Tu Teléfono" required>
+
+                        <br>
+                        <label for="mensaje">Mensaje: </label>
+                        
+                        <textarea  id="mensaje" name="mensaje" rows="5" cols="103"></textarea>
+                    </fieldset>
+                    <div class="boton-enviar">
+                        <input type="submit" value="Enviar" class="boton boton-verde">
+                    </div>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/atencion_cliente.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+        
+  </main>
+
+    <footer>
+       
+        <p>Todos los derechos reservados &copy; Papelería bp&TEC</p>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+</body>
+</html>
